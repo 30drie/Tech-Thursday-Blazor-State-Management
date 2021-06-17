@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET Core Web App", "ASP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Web Application", "ASP.NET Web Application\ASP.NET Web Application.csproj", "{3C14686F-4CA7-4B43-ABA9-6C9A3AA33D39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET Web Forms Application", "ASP.NET Web Forms Application\ASP.NET Web Forms Application.csproj", "{DBF076FB-7888-4A2B-BD68-06C415E4720F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3C14686F-4CA7-4B43-ABA9-6C9A3AA33D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C14686F-4CA7-4B43-ABA9-6C9A3AA33D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C14686F-4CA7-4B43-ABA9-6C9A3AA33D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF076FB-7888-4A2B-BD68-06C415E4720F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF076FB-7888-4A2B-BD68-06C415E4720F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF076FB-7888-4A2B-BD68-06C415E4720F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF076FB-7888-4A2B-BD68-06C415E4720F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
