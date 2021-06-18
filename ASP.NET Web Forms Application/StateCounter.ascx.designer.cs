@@ -11,43 +11,43 @@ namespace ASP.NET_Web_Forms_Application
 {
 
 
-	public partial class About
+	public partial class StateCounter
 	{
 
 		/// <summary>
-		/// ViewStateCounter control.
+		/// litTitle control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::ASP.NET_Web_Forms_Application.StateCounter ViewStateCounter;
+		protected global::System.Web.UI.WebControls.Literal litTitle;
 
 		/// <summary>
-		/// SessionStateCounter control.
+		/// lblCounter control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::ASP.NET_Web_Forms_Application.StateCounter SessionStateCounter;
+		protected global::System.Web.UI.WebControls.Label lblCounter;
 
 		/// <summary>
-		/// ApplicationCounter control.
+		/// litContent control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::ASP.NET_Web_Forms_Application.StateCounter ApplicationCounter;
+		protected global::System.Web.UI.WebControls.Literal litContent;
 
 		/// <summary>
-		/// CookieCounter control.
+		/// btnClick control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::ASP.NET_Web_Forms_Application.StateCounter CookieCounter;
+		protected global::System.Web.UI.WebControls.Button btnClick;
 	}
 }
