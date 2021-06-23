@@ -1,0 +1,29 @@
+﻿@model ASP.NET.MVC.Models.CounterModel
+@{
+
+}
+
+@if (Model != null)
+{
+	<div class="col-sm-6">
+		<h2>@Model.Title</h2>
+		<h1 class="display-3">
+			@Model.Counter.ToString()
+		</h1>
+		<p>
+			@Model.Content
+		</p>
+		<p>
+			<a class="btn btn-primary" href="@Url.Action("CountUp", "Home", new { key = Model.Key })">Click</a>
+		</p>
+	</div>
+}
+else
+{
+	<div class="col-sm-6">
+		<h2>NULL</h2>
+	</div>
+}
+
+
+

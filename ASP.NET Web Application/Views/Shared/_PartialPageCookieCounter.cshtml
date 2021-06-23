@@ -1,0 +1,27 @@
+﻿@model HttpCookie
+@{
+
+}
+
+@if (Model != null)
+{
+	<div class="col-sm-6">
+		<h2>Cookie</h2>
+		<h1 class="display-3">
+			@Model.Value
+		</h1>
+		<p>
+			Cookies store data across requests. Because cookies are sent with every request, their size should be kept to a minimum. Ideally, only an identifier should be stored in a cookie with the data stored by the app. Most browsers restrict cookie size to 4096 bytes. Only a limited number of cookies are available for each domain.
+		</p>
+		<p>
+			<a class="btn btn-primary" href="@Url.Action("CountUp", "Home", new { key = "CookieCounter" })">Click</a>
+		</p>
+	</div>
+}
+else
+{
+	<div class="col-sm-6">
+		<h2>NULL</h2>
+	</div>
+}
+
