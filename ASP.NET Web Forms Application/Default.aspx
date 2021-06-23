@@ -22,7 +22,7 @@
             Content="Application state is useful for storing information that needs to be maintained between server round trips and between requests for pages. Application state is stored in a key/value dictionary that is created during each request to a specific URL. You can add your application-specific information to this structure to store it between page requests."/>
 
         <uc1:StateCounter runat="server" id="CookieCounter" Title="Cookies" OnCountingChangedEvent="CookieCounter_CountingChangedEvent"
-            Content="Application state is useful for storing information that needs to be maintained between server round trips and between requests for pages. Application state is stored in a key/value dictionary that is created during each request to a specific URL. You can add your application-specific information to this structure to store it between page requests."/>
+            Content="Cookies store data across requests. Because cookies are sent with every request, their size should be kept to a minimum. Ideally, only an identifier should be stored in a cookie with the data stored by the app. Most browsers restrict cookie size to 4096 bytes. Only a limited number of cookies are available for each domain."/>
 
     </div>
 </asp:Content>

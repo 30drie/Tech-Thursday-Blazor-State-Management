@@ -81,7 +81,7 @@ namespace ASP.NET_Web_Forms_Application
 		protected void CookieCounter_CountingChangedEvent(object sender, CounterEventArgs e)
 		{
 			Response.Cookies[CookieCounting].Value = e.Counter.ToString();
-			Response.Cookies[CookieCounting].Expires = DateTime.Now.AddDays(1);
+			Response.Cookies[CookieCounting].Expires = DateTime.Now.AddHours(1);
 			
 		}
 	}
