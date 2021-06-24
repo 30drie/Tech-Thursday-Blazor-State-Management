@@ -1,4 +1,3 @@
-using Blazor.Server.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -28,7 +27,25 @@ namespace Blazor.Server
 		{
 			services.AddRazorPages();
 			services.AddServerSideBlazor();
-			services.AddSingleton<WeatherForecastService>();
+
+			/*
+
+			https://docs.microsoft.com/en-us/dotnet/core/compatibility/aspnet-core/5.0/blazor-protectedbrowserstorage-moved
+
+			If upgrading from ASP.NET Core 5.0 RC1, complete the following steps:
+
+			Remove the Microsoft.AspNetCore.Components.ProtectedBrowserStorage package reference from the project.
+			Replace using Microsoft.AspNetCore.Components.ProtectedBrowserStorage; with using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;.
+			Remove the call to AddProtectedBrowserStorage from your Startup class.
+
+
+			If upgrading from ASP.NET Core 5.0 Preview 8, complete the following steps:
+
+			Remove the Microsoft.AspNetCore.Components.Web.Extensions package reference from the project.
+			Replace using Microsoft.AspNetCore.Components.Web.Extensions; with using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;.
+			Remove the call to AddProtectedBrowserStorage from your Startup class.
+
+			*/
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

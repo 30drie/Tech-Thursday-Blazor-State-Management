@@ -1,0 +1,37 @@
+﻿@inject ProtectedSessionStorage SessionStorage
+
+<div class="col-sm-6">
+	<h2>Counter</h2>
+	<h1 class="display-3">
+		@currentCount
+	</h1>
+	<p>
+		Session Storage counter
+	</p>
+	<p>
+		<button class="btn btn-primary" @onclick="IncrementCount">Count Up</button>
+	</p>
+</div>
+
+@code {
+	private int currentCount = 0;
+
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if (firstRender)
+		{
+			var storage = await SessionStorage.GetAsync<int>("Counter");
+			if (storage.Success)
+			{
+				currentCount = storage.Value;
+				StateHasChanged();
+			}		
+		}
+	}
+
+    private void IncrementCount()
+    {
+        currentCount++;
+		SessionStorage.SetAsync("Counter", currentCount);
+    }
+}
