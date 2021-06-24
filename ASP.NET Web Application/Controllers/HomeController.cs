@@ -83,7 +83,7 @@ namespace ASP.NET.MVC.Controllers
 				counterModel = new CounterModel
 				{
 					Title = "ViewData",
-					Content = "ViewData is a container for data to be passed from the PageModel to the content page. ViewData is a dictionary of objects with a string-based key. ",
+					Content = "ViewData is a container for data to be passed from the PageModel to the content page. ViewData is a dictionary of objects with a string-based key. ViewBag internally uses ViewData and as storage is the same, it lasts only the current HTTP request. It can only transfers data from Controller to View.",
 					Counter = 0,
 					Key = "ViewDataCounter"
 				};
