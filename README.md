@@ -9,3 +9,7 @@ Use this project to test the maximum size between various browsers.
 And is there a difference when using ASP.NET Core Protected Browser Storage?
 
 I hope to see some Pull Requests or Forks
+
+# Blazor Extensions Storage 
+Used Blazor Extensions Storage to show difference between protected and unprotected storage
+https://github.com/BlazorExtensions/Storage
